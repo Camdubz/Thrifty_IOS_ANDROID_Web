@@ -1,15 +1,14 @@
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
-    page: {
-      padding: 10,
-    },
+
     root: {
       flexDirection: 'row',
       borderWidth: 1,
       borderColor: '#d1d1d1',
       borderRadius: 10,
       backgroundColor: '#fff',
+      margin: 5,
     },
     image: {
       flex: 2,

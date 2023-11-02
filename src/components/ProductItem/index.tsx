@@ -3,10 +3,22 @@ import React from 'react';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import styles from './styles';
 
-const ProductItem = () => {
+interface ProductItemProps {
+  item: {
+    id: string;
+    title: string;
+    img: string;
+    aveRating: number;
+    ratings: number;
+    price: number;
+    oldPrice?: number;
+  };
+}
+
+const ProductItem = (props: ProductItemProps) => {
   return (
     <View>
-    <View style={styles.root}>
+      <View style={styles.root}>
         <Image
           style={styles.image}
           source={{
